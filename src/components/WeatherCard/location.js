@@ -14,11 +14,11 @@ const Country = styled.h3`
   font-family: "Fira Sans", sans-serif;
   font-size: 1.1rem;
 `;
-const Location = props => {
+const Location = ({ city, country }) => {
   return (
     <Container>
-      <City>Nagercoil</City>
-      <Country>IN</Country>
+      <City>{city}</City>
+      <Country>{country}</Country>
     </Container>
   );
 };

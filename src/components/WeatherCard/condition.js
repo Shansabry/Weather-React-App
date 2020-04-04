@@ -6,8 +6,8 @@ const Container = styled.h3`
   font-size: 1.2rem;
 `;
 
-const Condition = props => {
-  return <Container>Cloud</Container>;
+const Condition = ({ condition }) => {
+  return <Container>{condition}</Container>;
 };
 
 export default Condition;

@@ -1,14 +1,11 @@
 import React from "react";
 import "./App.css";
-import WeatherCard from "./components/WeatherCard/component";
+import WeatherEngine from "./components/weatherEngine";
 
 function App() {
   return (
     <div className="App">
-      <WeatherCard temperature={18} condition="Clouds" />
-      <WeatherCard temperature={28} condition="Clear" />
-      <WeatherCard temperature={-5} condition="Thunderstorm" />
-      <WeatherCard temperature={40} condition="Fog" />
+      <WeatherEngine location="kolkata,in" />
     </div>
   );
 }

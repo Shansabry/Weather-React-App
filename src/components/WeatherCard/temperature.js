@@ -7,8 +7,8 @@ const Container = styled.h1`
   font-weight: 200;
 `;
 
-const Temperature = props => {
-  return <Container>20°C</Container>;
+const Temperature = ({ temperature }) => {
+  return <Container>{temperature}°C</Container>;
 };
 
 export default Temperature;
